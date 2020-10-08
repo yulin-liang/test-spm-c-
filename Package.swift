@@ -21,5 +21,8 @@ let package = Package(
         .target(
             name: "test-spm-c-",
             dependencies: []),
+        .testTarget(
+            name: "test-spm-c-Tests",
+            dependencies: ["test-spm-c-"]),
     ]
 )
